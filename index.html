@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/tailwindOutput.css" rel="stylesheet">
+    <title>Book list project-ghaffari</title>
+</head>
+
+<body>
+    <div class="container mx-auto px-5 py-10 grid grid-cols-12">
+        <div class="col-span-12 md:col-span-10 md:col-start-2 lg:col-span-8 lg:col-start-3 border rounded border-gray-300 shadow-lg overflow-hidden">
+            <header class="bg-gray-100 py-6 px-10">
+                <div id="page-banner" class="flex flex-col items-center justify-center">
+                    <h1 class="title text-4xl mb-6">OpenBook</h1>
+                    <form id="search-books" class="w-full sm:w-1/2">
+                        <input type="text" placeholder="جستجوی کتاب..." class="border border-black leading-6 py-1.5 rounded px-2.5 w-full">
+                    </form>
+                </div>
+            </header>
+            <div class="py-6 px-5 sm:px-10">
+                <div id="book-list">
+                    <h2 class="title text-2xl mb-5 mt-3">کتاب های اخیر</h2>
+                    <div class="clear"></div>
+                    <ul class="max-h-[35vh] overflow-y-auto" style="scrollbar-width:thin">
+                        <li class="li-classes">
+                            <span class=" name name-classes">اثر مرکب</span>
+                            <span class=" delete delete-classes">حذف</span>
+                        </li>
+                        <li class="li-classes">
+                            <span class="name name-classes">قدرت عادت</span>
+                            <span class="delete delete-classes">حذف</span>
+                        </li>
+                        <li class="li-classes">
+                            <span class="name name-classes">خودت را به فنا نده</span>
+                            <span class="delete delete-classes">حذف</span>
+                        </li>
+                        <li class="li-classes">
+                            <span class="name name-classes">قلعه حیوانات</span>
+                            <span class="delete delete-classes">حذف</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <form id="hide" class="mt-5">
+                    <input type="checkbox">
+                    <span class="mr-3">مخفی کردن کتاب ها</span>
+                </form>
+                
+                <div class="clear"></div>
+                
+                <form id="add-book" class="my-5 flex items-center justify-center w-full sm:w-2/3 mx-auto">
+                    <button class="bg-violet-500 border-violet-500 text-white px-6 py-1.5 rounded-r">اضافه</button>
+                    <input type="text" class="border w-full py-1.5 px-2 border-gray-300 rounded-l " placeholder="کتاب اضافه کنید..." />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

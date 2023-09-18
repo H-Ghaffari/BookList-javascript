@@ -1,0 +1,18 @@
+@import url("fonts.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .li-classes {
+        @apply flex items-center justify-between mb-5 pt-2 border-r-4 border-gray-300 px-4 hover:border-violet-800;
+    }
+    .name-classes{
+        @apply inline-block max-w-[70%];
+    }
+
+    .delete-classes{
+        @apply  px-2 inline-block py-1 bg-violet-500 text-white rounded hover:bg-violet-800 cursor-pointer;
+    }
+}
+
